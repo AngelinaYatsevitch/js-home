@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <input placeholder="search" id="search" value="введите e-mail">
+        <input placeholder="search" id="search" value="введите пароль">
+        <button class="btn">Войти</button>
+      </div>
+      <script>
+          //------------------
+
+let wrapperEl = document.querySelector('wrapper');
+let searchInput = document.querySelector('#search');
+let searchButton = document.querySelector('.btn');
+
+searchButton.addEventListener('click', search);
+searchInput.addEventListener('dblclick', search);
+searchInput.addEventListener('keyup', red);
+
+
+
+function search(){
+    alert('вы ищите: '+ searchInput.value);
+}
+function red(){
+    if (searchInput.value ==='333'){
+       searchInput.style.backgroundColor = 'red'  
+    }
+   
+}
+      </script>
+</body>
+</html>
