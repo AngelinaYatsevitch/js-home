@@ -9,17 +9,69 @@
 
 </head>
 <body>
+  <div id="main_screen">
   <h1>Главная страница</h1>
   <menu>
     <ul>
       <li> <a href="#">Главная</a> </li>
-      <li> <a href="#">Клиенты</a> </li>
+      <li> <a href="сlients.html">Клиенты</a> </li>
       <li> <a href="map.html">Карта</a> </li>
     </ul>
-    
+  <button class="btn">Выход</button>
   </menu>
+  </div>
+  <div id="first_screen">
+    <div class="authentification">
+        <form class="form">
+            <p class="form_title">Вход</p>
+            <label for="username" class="form_label">Электронная почта
+                <input id="enter_username" class="form_input" type="email" placeholder="Введите ваш email" required>
+                <span class="errorMessageEmail">Введите корректный email</span>
+            </label>
+           
+            <label for="password" class="form_label">Пароль
+                <input id="enter_password" class="form_input" type="password" placeholder="Введите пароль" required>
+                <span class="errorMessagePass">Введите корректный пароль</span>
+            </label>
+            
+            <button type="submit" class="btn disabled" id="enter_btn" disabled>Войти</button>
+            <a class="registration_link" href="#">Зарегестрироваться</a>
 
-  <div class="auth">
+        </form>
+    </div>
+
+
+    <div class="registration">
+        <form class="form">
+            <p class="form_title">Регистрация</p>
+            <label for="username" class="form_label">Электронная почта
+                <input id="reg_username" class="form_input" type="email" placeholder="Введите ваш email" required>
+                <span class="errorMessageEmail">Введите корректный email</span>
+            </label>
+           
+            <label for="password" class="form_label">Пароль
+                <input id="reg_password" class="form_input" type="password" placeholder="Введите пароль" required>
+                <span class="errorMessagePass">Введите корректный пароль</span>
+            </label>
+
+            <label for="password" class="form_label">Подтверждение пароля
+                <input id="reg_password_check" class="form_input" type="password" placeholder="Введите пароль ещё раз" required>
+                <span class="errorMessagePass">Введите корректный пароль</span>
+            </label>
+            
+            <button type="submit" class="btn disabled" id="registrate_btn" disabled>Зарегестрироваться</button>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <!-- <div class="auth">
     <form class="form">
       <div class="input-data">
         <input type="text" placeholder="Введите e-mail">
@@ -30,18 +82,13 @@
       <div class="input-data">
         <button>submit</button>
       </div>
-
-
-
-
     </form>
-  </div>
+  </div> -->
 
 
 
   
 
-  <button class="btn">Выход</button>
 
 <script src="script.js"></script>
 </body>
